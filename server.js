@@ -11,7 +11,7 @@ app.get('/', (req,res)=>{
 
 app.get('/tavern', (req, res)=>{
     console.log('playing audio');
-    player.play(process.cwd()+'/tavern.mp3', function(err){
+    player.play(process.cwd()+'/data/tavern.mp3', function(err){
         if (err) {
             console.log(err)
         }
