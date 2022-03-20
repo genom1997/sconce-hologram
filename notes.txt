@@ -1,0 +1,20 @@
+after disabling the compositor vlc starts to play videos fine raspi-config > advanced options > compositor > disable
+, mplayer still fails
+
+mmal: mmal_port_event_get: vc.ril.video_decode(1:0) port 0x3ed780, no event buffer left for ERRO
+mmalipc: mmal_vc_handle_event_msg: no event buffer available to receive event (2)
+
+when playing flames
+
+the rest give 
+
+VLC media player 3.0.12 Vetinari (revision 1.0.6-1618-g917488b78)
+[00fd97c8] main interface error: no suitable interface module
+[00f50b58] main libvlc error: interface "globalhotkeys,none" initialization failed
+[00f50b58] main libvlc: Running vlc with the default interface. Use 'cvlc' to use vlc without interface.
+[00fd97c8] skins2 interface error: cannot initialize OSFactory
+[00fd97c8] [cli] lua interface: Listening on host "*console".
+VLC media player 3.0.12 Vetinari
+Command Line Interface initialized. Type `help' for help.
+> [6030c580] mmal_codec decoder: VCSM init succeeded: Legacy
+^C[00fd97c8] [cli] lua interface error: Error loading script /usr/lib/arm-linux-gnueabihf/vlc/lua/intf/cli.luac: lua/intf/modules/host.lua:289: Interrupted.

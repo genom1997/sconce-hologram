@@ -1,9 +1,40 @@
 <script>
-function play() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/tavern', true);
-    xhr.send();
-}
+    function play() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/music', true);
+        xhr.send();
+    }
 </script>
 
+<script>
+    function stopAudio() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/stopaudio', true);
+        xhr.send();
+    }
+</script>
+
+<script>
+    function playHolo() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/hologram', true);
+        xhr.send();
+    }
+</script>
+    
+<script>
+    function stopVideo() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/stopvideo', true);
+        xhr.send();
+    }
+</script>
+        
+
 <button onclick="play()">Play Tavern Music</button>
+
+<button onclick="stopAudio()">Stop Tavern Music</button>
+
+<button onclick="playHolo()">Display Hologram</button>
+
+<button onclick="stopVideo()">Stop Displaying Hologram</button>
